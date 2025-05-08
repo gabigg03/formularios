@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+       <p>
+        <label for="iusuario">Usuário: </label> <input type="text" name="usuario" id="iusuario" required maxlength="15" size="15" placeholder="Nome do usuário" autocomplete="username">
+       </p>
+       <p>
+        <label for="isenha">Senha: </label>
+        <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" size="10" placeholder="Senha" autocomplete="current-password">
+       </p> 
+       <p>
+           <input type="submit" value="Entrar">
+           <input type="reset" value="Limpar">
+       </p>
+    </form>
+    
+</body>
+</html>
+<!-- input type="password" é para senhas -->
+<!-- input type="reset" é para criar um botão de limpar -->
+<!-- required é posto dentro de input para que seja requerido tal dado se não tiver o dado requerido não é possível ir para a próxima página -->
+<!-- minlength significa comprimento mínimo -->
+<!-- maxlength significa comprimento máximo -->
+<!-- size é usado para definir o tamanho, ex: se for posto 4, vai aparecer o espaço de 4 carácteres -->
+<!-- placeholder vai fazer com que apareça um texto dentro da caixa de resposta -->
+ <!-- o autocomplete no input serve para relacionar o que vai aparecer com tal pergunta -->
