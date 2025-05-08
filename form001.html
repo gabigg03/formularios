@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- method="post" não bota os dados na url, porem os dados não estão totalmente protegidos. é melhor usar post para dados sensíveis. Mas para a real segurança de dados é importante aprender o https -->
+        <!-- method="GET" bota os dados no url, porem não pode ultrapassar de 3000 letras -->
+        <!-- action="cadastro.php" vai mandar os dados para a pasta php  -->
+        <!-- autocomplete="off" vai tirar o negócio que complementa -->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"> </p>
+            <!-- name: mais útil para php e html 
+            id: javascript e label-->
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <!-- label ajuda os mecanismos de busca a relacionar o texto com a caixa de texto  e também cria uma área maior de sensibilidade para celulares-->
+            <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <!-- input:text serve para criar uma caixa pra escrever -->
+        <p><input type="submit" value="Enviar"></p>
+        <!-- input:submit serve para criar um botão  -->
+        <!-- por enquanto a caixa não tem ligação com o parágrafo ao lado para isso é necessário usar uma outra linguagem de programação como por exemplo o php que o ideal nessa situação -->
+    </form>
+</body>
+</html>
